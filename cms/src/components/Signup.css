@@ -1,11 +1,87 @@
-.signup{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* General container styling for the signup form */
+.overall {
+    width: 100%;  /* Use full width with some space on sides */
+    max-width: 500px; /* Restrict the form width */
+    margin: 1vh auto; /* Vertically centered with space from top */
+    padding: 2vw; /* Padding as a percentage of viewport width */
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title for the form */
+  h3 {
     text-align: center;
-    padding: 20px;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
+    font-size: 5vw;  /* Font size based on viewport width */
+    margin-bottom: 2vw;
+    color: #333;
+  }
+  
+  /* General styles for input fields and select dropdown */
+  input,
+  select {
+    width: 100%; /* Ensure inputs take up the full width */
+    padding: 2vw; /* Padding based on viewport width */
+    margin-top: 2vw;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 4vw; /* Font size based on viewport width */
+    box-sizing: border-box;
+  }
+  
+  /* Styling for password fields */
+  input[type="password"] {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Role dropdown */
+  select {
+    background-color: white;
+    font-size: 4vw; /* Adjusted font size */
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%;
+    padding: 2.5vw; /* Padding based on viewport width */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 5vw; /* Font size based on viewport width */
+    margin-top: 4vw;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Focus styles for input fields */
+  input:focus,
+  select:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+  
+  /* Adjustments for placeholder text */
+  input::placeholder {
+    color: #888;
+  }
+  
+  /* Margin for input fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    margin-bottom: 2vw; /* Margin between input fields */
+  }
+  
+  /* Label styling */
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1vw;
+    color: #333;
+  }
   
