@@ -7,7 +7,7 @@
   box-sizing: border-box; /* Ensures padding and border don't cause overflow */
 }
 
-/* General container styling for the signup form */
+/* General container styling for the login form */
 .overall {
   width: 100%;
   max-width: 500px;
@@ -28,7 +28,7 @@ h3 {
   color: #333;
 }
 
-/* General styles for input fields and select dropdown */
+/* General styles for input fields */
 input,
 select {
   width: 100%;
@@ -38,11 +38,6 @@ select {
   border-radius: 4px;
   font-size: 2vw;
   box-sizing: border-box;
-}
-
-/* Styling for password fields */
-input[type="password"] {
-  font-family: 'Arial', sans-serif;
 }
 
 /* Button styling */
@@ -75,7 +70,6 @@ input::placeholder {
 }
 
 /* Margin for input fields */
-input[type="text"],
 input[type="email"],
 input[type="password"] {
   margin-bottom: 2vw;
