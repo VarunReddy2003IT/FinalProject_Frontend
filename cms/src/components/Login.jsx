@@ -53,7 +53,15 @@ function Login() {
       setPassword('');
 
       // Store user info in localStorage
-      localStorage.setItem('user', JSON.stringify({ email, role }));
+      const userData = { email, role };
+      localStorage.setItem('user', JSON.stringify(userData));
+
+      // Set a timer to log out the user after 2 minutes (120,000ms)
+      setTimeout(() => {
+        localStorage.removeItem('user'); // Remove user data from localStorage
+        alert('You have been logged out due to inactivity.');
+        navigate('/login'); // Redirect to the login page
+      }, 120000); // 120,000 ms = 2 minutes
 
       // Navigate to the success page with role information
       navigate(`/success?role=${role}`);
