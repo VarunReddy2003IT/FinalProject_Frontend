@@ -8,7 +8,7 @@
 }
 
 /* General container styling for the login form */
-.overall {
+.login-container {
   width: 100%;
   max-width: 500px;
   margin: 2vh auto;
@@ -28,7 +28,7 @@ h3 {
   color: #333;
 }
 
-/* General styles for input fields */
+/* General styles for input fields and select dropdown */
 input,
 select {
   width: 100%;
@@ -40,8 +40,13 @@ select {
   box-sizing: border-box;
 }
 
+/* Styling for password fields */
+input[type="password"] {
+  font-family: 'Arial', sans-serif;
+}
+
 /* Button styling */
-button {
+button.login-button {
   width: 100%;
   padding: 2.5vw;
   background-color: #4CAF50;
@@ -53,7 +58,7 @@ button {
   margin-top: 4vw;
 }
 
-button:hover {
+button.login-button:hover {
   background-color: #45a049;
 }
 
@@ -75,9 +80,17 @@ input[type="password"] {
   margin-bottom: 2vw;
 }
 
+/* Feedback message styling */
+.message {
+  text-align: center;
+  color: red;
+  font-size: 1.5vw;
+  margin-bottom: 1.5vw;
+}
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
-  .overall {
+  .login-container {
     padding: 4vw;
   }
 
@@ -90,14 +103,14 @@ input[type="password"] {
     font-size: 4vw;
   }
 
-  button {
+  button.login-button {
     font-size: 4vw;
     padding: 3vw;
   }
 }
 
 @media (max-width: 768px) {
-  .overall {
+  .login-container {
     padding: 6vw;
   }
 
@@ -110,13 +123,13 @@ input[type="password"] {
     font-size: 5vw;
   }
 
-  button {
+  button.login-button {
     font-size: 5vw;
   }
 }
 
 @media (max-width: 480px) {
-  .overall {
+  .login-container {
     padding: 8vw;
   }
 
@@ -129,7 +142,7 @@ input[type="password"] {
     font-size: 6vw;
   }
 
-  button {
+  button.login-button {
     font-size: 6vw;
     padding: 5vw;
   }
