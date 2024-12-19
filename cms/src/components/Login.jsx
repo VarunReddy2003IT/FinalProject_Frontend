@@ -10,15 +10,7 @@ function Login() {
   const [message, setMessage] = useState(''); // For feedback messages
   const navigate = useNavigate(); // For navigation
 
-  useEffect(() => {
-    // Check if the user is already logged in
-    const user = localStorage.getItem('user');
-    if (user) {
-      // If a user is logged in, redirect to home page or dashboard
-      alert('Already logged in!');
-      navigate('/app');  // Redirect to home or dashboard page
-    }
-  }, [navigate]);
+  
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
