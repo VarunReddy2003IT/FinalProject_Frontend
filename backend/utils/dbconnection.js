@@ -8,10 +8,7 @@ const mongoURI = 'mongodb+srv://varunreddy2new:Varun%404545@cms.v9l9d.mongodb.ne
  */
 const connectDB = async () => {
   try {
-    await mongoose.connect(mongoURI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(mongoURI);
     console.log('Connected to MongoDB');
   } catch (error) {
     console.error('Failed to connect to MongoDB:', error);
